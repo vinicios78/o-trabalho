@@ -3,9 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Operador de MBT - Tudo sobre a Profissão</title>
+    <title>Operador de MBT - Tudo sobre Tanques de Guerra</title>
     <style>
-        /* Estilos Gerais */
         * {
             margin: 0;
             padding: 0;
@@ -19,37 +18,27 @@
             line-height: 1.6;
         }
         
-        .container {
-            width: 90%;
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-        
-        /* Cabeçalho */
         header {
-            background: linear-gradient(to right, #1a3a5f, #2c5282);
+            background: linear-gradient(to right, #2c3e50, #4a6580);
             color: white;
             padding: 20px 0;
             text-align: center;
             box-shadow: 0 2px 5px rgba(0,0,0,0.1);
         }
         
-        header h1 {
-            margin-bottom: 10px;
-            font-size: 2.5rem;
-        }
-        
-        /* Navegação */
         nav {
-            background-color: #2c5282;
-            padding: 10px 0;
+            background-color: #34495e;
+            display: flex;
+            justify-content: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
         }
         
         nav ul {
             display: flex;
-            justify-content: center;
             list-style: none;
+            padding: 10px;
         }
         
         nav ul li {
@@ -64,99 +53,86 @@
         }
         
         nav ul li a:hover {
-            color: #a0c4e3;
+            color: #f39c12;
         }
         
-        /* Conteúdo Principal */
-        main {
-            padding: 30px 0;
-        }
-        
-        section {
+        .container {
+            width: 85%;
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
             background-color: white;
             border-radius: 8px;
-            padding: 25px;
-            margin-bottom: 30px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
         }
         
-        section h2 {
-            color: #2c5282;
-            margin-bottom: 15px;
-            padding-bottom: 10px;
-            border-bottom: 2px solid #e2e8f0;
-        }
-        
-        section p, section ul {
+        h1, h2, h3 {
+            color: #2c3e50;
             margin-bottom: 15px;
         }
         
-        section ul {
-            padding-left: 20px;
+        p {
+            margin-bottom: 15px;
         }
         
-        section ul li {
-            margin-bottom: 8px;
+        .image-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin: 20px 0;
         }
         
-        /* Tabela */
-        table {
+        .image-card {
+            width: 30%;
+            min-width: 250px;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            overflow: hidden;
+            box-shadow: 0 0 5px rgba(0,0,0,0.1);
+        }
+        
+        .image-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        
+        .image-card p {
+            padding: 10px;
+            text-align: center;
+            background-color: #f9f9f9;
+        }
+        
+        .tank-table {
             width: 100%;
             border-collapse: collapse;
             margin: 20px 0;
         }
         
-        table, th, td {
+        .tank-table th, .tank-table td {
             border: 1px solid #ddd;
-        }
-        
-        th, td {
-            padding: 12px;
+            padding: 10px;
             text-align: left;
         }
         
-        th {
-            background-color: #2c5282;
+        .tank-table th {
+            background-color: #34495e;
             color: white;
         }
         
-        tr:nth-child(even) {
+        .tank-table tr:nth-child(even) {
             background-color: #f2f2f2;
         }
         
-        /* Imagens */
-        .img-container {
-            text-align: center;
-            margin: 20px 0;
-        }
-        
-        .img-container img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-        }
-        
-        .img-container figcaption {
-            font-style: italic;
-            color: #666;
-            margin-top: 8px;
-        }
-        
-        /* Rodapé */
         footer {
-            background-color: #1a3a5f;
+            background-color: #2c3e50;
             color: white;
             text-align: center;
             padding: 20px 0;
             margin-top: 30px;
         }
         
-        footer p {
-            margin-bottom: 10px;
-        }
-        
-        /* Responsividade */
         @media (max-width: 768px) {
             nav ul {
                 flex-direction: column;
@@ -167,135 +143,176 @@
                 margin: 5px 0;
             }
             
-            header h1 {
-                font-size: 2rem;
+            .image-card {
+                width: 100%;
             }
         }
     </style>
 </head>
 <body>
     <header>
-        <div class="container">
-            <h1>Operador de MBT</h1>
-            <p>Tudo sobre Materiais Bélicos e Tecnológicos</p>
-        </div>
+        <h1>Operador de MBT - Tanques de Batalha Principal</h1>
+        <p>Tudo sobre a profissão, equipamentos e tecnologia dos tanques modernos</p>
     </header>
     
     <nav>
-        <div class="container">
-            <ul>
-                <li><a href="#o-que-e">O que é MBT?</a></li>
-                <li><a href="#funcoes">Funções</a></li>
-                <li><a href="#requisitos">Requisitos</a></li>
-                <li><a href="#formacao">Formação</a></li>
-                <li><a href="#mercado">Mercado de Trabalho</a></li>
-            </ul>
-        </div>
+        <ul>
+            <li><a href="#sobre">Sobre a Profissão</a></li>
+            <li><a href="#funcoes">Funções</a></li>
+            <li><a href="#equipamentos">Equipamentos</a></li>
+            <li><a href="#tanques">Tanques Famosos</a></li>
+            <li><a href="#galeria">Galeria</a></li>
+        </ul>
     </nav>
     
-    <main class="container">
-        <section id="o-que-e">
-            <h2>O que é um Operador de MBT?</h2>
-            <p>O Operador de MBT (Materiais Bélicos e Tecnológicos) é um profissional especializado no manuseio, controle, manutenção e operação de equipamentos e materiais de natureza bélica e tecnológica, geralmente em contextos militares, de segurança ou em empresas de defesa.</p>
+    <div class="container">
+        <section id="sobre">
+            <h2>Sobre o Operador de MBT</h2>
+            <p>O operador de MBT (Main Battle Tank ou Tanque de Batalha Principal) é um militar especializado na operação de um dos veículos de combate mais importantes nas forças armadas modernas. Este profissional é responsável por comandar, dirigir ou operar os sistemas de armas de um tanque de guerra.</p>
             
-            <div class="img-container">
-                <img src="https://via.placeholder.com/800x400?text=Imagem+de+Operador+de+MBT" alt="Operador de MBT em ação">
-                <figcaption>Ilustração de um operador de MBT realizando suas funções</figcaption>
+            <div class="image-gallery">
+                <div class="image-card">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Leopard_2_A7_%2B_%28cropped%29.jpg/800px-Leopard_2_A7_%2B_%28cropped%29.jpg" alt="Interior de um tanque moderno">
+                    <p>Interior de um tanque Leopard 2</p>
+                </div>
+                <div class="image-card">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/M1_Abrams_Tank_-_Flickr_-_The_U.S._Army_%281%29.jpg/800px-M1_Abrams_Tank_-_Flickr_-_The_U.S._Army_%281%29.jpg" alt="Tripulação de tanque em treinamento">
+                    <p>Tripulação de um M1 Abrams em exercício</p>
+                </div>
             </div>
-            
-            <p>Este profissional trabalha com uma variedade de equipamentos que vão desde armamentos convencionais até sistemas tecnológicos avançados de vigilância, comunicação e defesa.</p>
         </section>
         
         <section id="funcoes">
             <h2>Funções do Operador de MBT</h2>
-            <p>As principais atribuições de um Operador de MBT incluem:</p>
-            <ul>
-                <li>Operar e manter equipamentos bélicos e tecnológicos</li>
-                <li>Realizar a gestão de inventário de materiais</li>
-                <li>Executar procedimentos de segurança no manuseio de equipamentos</li>
-                <li>Fazer a inspeção regular dos materiais sob sua responsabilidade</li>
-                <li>Colaborar no desenvolvimento de protocolos de operação</li>
-                <li>Participar de simulacros e exercícios de treinamento</li>
-                <li>Manter registros detalhados das operações realizadas</li>
-            </ul>
-        </section>
-        
-        <section id="requisitos">
-            <h2>Requisitos para se tornar um Operador de MBT</h2>
-            <p>Para atuar nesta área, são necessários:</p>
-            <table>
-                <tr>
-                    <th>Requisito</th>
-                    <th>Descrição</th>
-                </tr>
-                <tr>
-                    <td>Formação</td>
-                    <td>Curso técnico ou superior em áreas específicas, ou treinamento militar especializado</td>
-                </tr>
-                <tr>
-                    <td>Certificações</td>
-                    <td>Certificações específicas conforme o tipo de equipamento a ser operado</td>
-                </tr>
-                <tr>
-                    <td>Habilidades técnicas</td>
-                    <td>Conhecimento em eletrônica, mecânica e sistemas computadorizados</td>
-                </tr>
-                <tr>
-                    <td>Perfil psicológico</td>
-                    <td>Capacidade de trabalhar sob pressão, atenção aos detalhes e responsabilidade</td>
-                </tr>
-                <tr>
-                    <td>Condição física</td>
-                    <td>Boa condição física para manusear equipamentos pesados em alguns casos</td>
-                </tr>
-            </table>
-        </section>
-        
-        <section id="formacao">
-            <h2>Formação e Capacitação</h2>
-            <p>A formação de um Operador de MBT varia conforme o contexto de atuação:</p>
+            <p>Um operador de MBT pode exercer diferentes funções dentro da tripulação de um tanque, que normalmente é composta por 3 a 4 membros:</p>
             
-            <h3>Área Militar</h3>
-            <p>Nas forças armadas, a capacitação é realizada através de cursos especializados oferecidos pelas próprias instituições militares, com treinamento prático intensivo.</p>
+            <h3>Comandante</h3>
+            <p>Líder da equipe, responsável pela tomada de decisões, navegação e coordenação com outras unidades.</p>
             
-            <h3>Área Civil</h3>
-            <p>No setor civil, existem cursos técnicos e tecnológicos em áreas como:</p>
-            <ul>
-                <li>Mecatrônica</li>
-                <li>Eletrônica</li>
-                <li>Automação Industrial</li>
-                <li>Segurança e Defesa</li>
-            </ul>
+            <h3>Artilheiro</h3>
+            <p>Responsável por operar o armamento principal do tanque, incluindo mira e disparo.</p>
             
-            <p>Além disso, muitas empresas do setor de defesa oferecem treinamentos específicos para seus operadores.</p>
-        </section>
-        
-        <section id="mercado">
-            <h2>Mercado de Trabalho</h2>
-            <p>O Operador de MBT pode atuar em diversos ambientes:</p>
-            <ul>
-                <li>Forças Armadas (Exército, Marinha, Aeronáutica)</li>
-                <li>Empresas de segurança privada</li>
-                <li>Indústria de defesa e tecnologia</li>
-                <li>Órgãos governamentais de segurança</li>
-                <li>Centros de pesquisa e desenvolvimento</li>
-            </ul>
+            <h3>Carregador</h3>
+            <p>Encarregado de carregar a munição no canhão principal (em tanques sem carregador automático).</p>
             
-            <p>A demanda por estes profissionais tem crescido com o avanço tecnológico na área de defesa e segurança, com oportunidades tanto no setor público quanto privado.</p>
+            <h3>Motorista</h3>
+            <p>Responsável por conduzir o veículo, manutenção básica do motor e sistemas de locomoção.</p>
             
-            <div class="img-container">
-                <img src="https://via.placeholder.com/800x400?text=Ambiente+de+Trabalho+MBT" alt="Ambiente de trabalho do Operador de MBT">
-                <figcaption>Exemplo de ambiente onde um Operador de MBT pode atuar</figcaption>
+            <div class="image-card">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/M1_Abrams_internals.jpg/800px-M1_Abrams_internals.jpg" alt="Diagrama das posições em um tanque">
+                <p>Diagrama mostrando as posições da tripulação em um M1 Abrams</p>
             </div>
         </section>
-    </main>
+        
+        <section id="equipamentos">
+            <h2>Equipamentos e Tecnologia</h2>
+            <p>Os operadores de MBT trabalham com tecnologia de ponta e diversos equipamentos especializados:</p>
+            
+            <ul>
+                <li>Sistemas de visão noturna e térmica</li>
+                <li>Computadores de tiro balístico</li>
+                <li>Sistemas de proteção ativa e passiva</li>
+                <li>Comunicações criptografadas</li>
+                <li>Simuladores de treinamento avançados</li>
+            </ul>
+            
+            <div class="image-gallery">
+                <div class="image-card">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Trophy_Active_Protection_System.jpg/800px-Trophy_Active_Protection_System.jpg" alt="Sistema de proteção ativa">
+                    <p>Sistema de proteção ativa Trophy</p>
+                </div>
+                <div class="image-card">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/ANVVS-2.jpg/800px-ANVVS-2.jpg" alt="Visão noturna para tanques">
+                    <p>Dispositivo de visão noturna para blindados</p>
+                </div>
+            </div>
+        </section>
+        
+        <section id="tanques">
+            <h2>Tanques de Batalha Principal Famosos</h2>
+            
+            <table class="tank-table">
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>País de Origem</th>
+                        <th>Ano de Introdução</th>
+                        <th>Características</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>M1 Abrams</td>
+                        <td>EUA</td>
+                        <td>1980</td>
+                        <td>Motor turbina, blindagem Chobham</td>
+                    </tr>
+                    <tr>
+                        <td>Leopard 2</td>
+                        <td>Alemanha</td>
+                        <td>1979</td>
+                        <td>Alta mobilidade, canhão Rheinmetall 120mm</td>
+                    </tr>
+                    <tr>
+                        <td>T-90</td>
+                        <td>Rússia</td>
+                        <td>1992</td>
+                        <td>Sistema de proteção ativa, canhão 125mm</td>
+                    </tr>
+                    <tr>
+                        <td>Challenger 2</td>
+                        <td>Reino Unido</td>
+                        <td>1998</td>
+                        <td>Blindagem pesada, canhão de cano raiado</td>
+                    </tr>
+                    <tr>
+                        <td>Leclerc</td>
+                        <td>França</td>
+                        <td>1992</td>
+                        <td>Carregador automático, sistema digital avançado</td>
+                    </tr>
+                </tbody>
+            </table>
+            
+            <div class="image-gallery">
+                <div class="image-card">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Leopard_2_A5_der_Bundeswehr.jpg/800px-Leopard_2_A5_der_Bundeswehr.jpg" alt="Tanque Leopard 2">
+                    <p>Leopard 2A5 das Forças Armadas da Alemanha</p>
+                </div>
+                <div class="image-card">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/140810-A-ZZ999-002.jpg/800px-140810-A-ZZ999-002.jpg" alt="Tanque M1 Abrams">
+                    <p>M1 Abrams do Exército dos EUA</p>
+                </div>
+                <div class="image-card">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/T-90_2010.jpg/800px-T-90_2010.jpg" alt="Tanque T-90">
+                    <p>T-90 das Forças Armadas Russas</p>
+                </div>
+            </div>
+        </section>
+        
+        <section id="galeria">
+            <h2>Galeria de Imagens</h2>
+            
+            <div class="image-gallery">
+                <div class="image-card">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Operation_Desert_Storm_Map.png/800px-Operation_Desert_Storm_Map.png" alt="Operação com tanques">
+                    <p>Tanques em operação durante a Tempestade no Deserto</p>
+                </div>
+                <div class="image-card">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Bundesarchiv_Bild_101I-297-1726-09A%2C_Panzer_VI_%28Tiger_I%29.jpg/800px-Bundesarchiv_Bild_101I-297-1726-09A%2C_Panzer_VI_%28Tiger_I%29.jpg" alt="Tanque histórico">
+                    <p>Tanque Tiger I, da Segunda Guerra Mundial</p>
+                </div>
+                <div class="image-card">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/2006_Cadet_Tank_Commander.jpg/800px-2006_Cadet_Tank_Commander.jpg" alt="Comandante de tanque">
+                    <p>Comandante de tanque em exercício de treinamento</p>
+                </div>
+            </div>
+        </section>
+    </div>
     
     <footer>
-        <div class="container">
-            <p>Site informativo sobre a profissão de Operador de MBT</p>
-            <p>© 2023 - Todos os direitos reservados</p>
-            <p>Este site é apenas para fins educacionais e informativos.</p>
-        </div>
+        <p>Site informativo sobre operadores de MBT - Tanques de Batalha Principal</p>
+        <p>Este site é apenas para fins educativos e informativos.</p>
     </footer>
 </body>
 </html>
